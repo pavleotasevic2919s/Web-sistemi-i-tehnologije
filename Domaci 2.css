@@ -1,0 +1,38 @@
+.tabela
+        {
+            border: green;
+            border-collapse: collapse;
+        }
+        .ime
+        {
+            background-color: blue;
+            text-align: center;
+            
+        }
+        .prezime
+        {
+            background-color: yellow;
+            text-align: right;
+            
+        }
+        .jmbg
+        {
+            background-color: rgb(94, 231, 76);
+            
+        }
+        #red
+        {
+            background-color: rgb(94, 231, 76);
+            color: red;
+        }
+        .forma {
+            width: 500px;
+           border: 10px solid rgb(94, 231, 76);
+           padding-top: 20px;
+           padding-bottom: 20px;            
+        }
+        .sve
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
