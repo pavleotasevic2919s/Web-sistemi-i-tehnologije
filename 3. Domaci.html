@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="shortcut icon" href="nike logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="3. Domaci.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <nav>
+
+
+<!---------------------------------------------HEADER----------------------------------------------- -->
+
+
+        <img src="nike.webp" alt="logo">
+        
+            <ul>
+                <li class="jdi"> <h4>JUST DO IT.</h4></li>
+            <li><a href="Glavna.html">HOME</a></li>
+            <li><a href="Muško.html">MEN</a></li>
+            <li><a href="Žene.html">WOMEN</a></li>
+            <li><a href="Vesti.html">NEWS</a></li>
+            <li><a href="Registracija.html">REGISTRATION</a></li>
+            <li><a href="Korpa.html">CART <i class="fas fa-shopping-cart"></i> </a></li>
+        </ul>
+    </nav>  
+</head>
+
+<!---------------------------------------------HOME----------------------------------------------- -->
+
+
+<body id="main">
+    
+    <div>
+        <p class="naslov">HOME <hr color="orange"></p>
+    </div>
+    <div id="Home">
+        <div class="container">
+        <p class="proizvod">
+            
+            <h2 class="naziv">Lebron 18</h2>
+            <br>
+            <img src="Lebron 18.jpg" alt="">
+            <br>
+            <p style="color: orange;" class="opis">Price: 200$</p>
+            <br>
+            <p class="opis" >Amount: <input type="number" name="Amount" min="1" value="1"  style="width: 40px;" ></p>
+            <br>
+            <button class="btn">Add to cart</button>
+        </p>
+    </div>
+        <br>
+        <div class="container">
+        <p class="proizvod">
+            <h2 class="naziv">Nike Windrunner</h2>
+            <br>
+            <img src="Crno_bela jakna.jpg" alt="Fill Windrunner
+            ">
+            <br>
+            <p style="color: orange;" class="opis" >price: 250$</p>
+            <br>
+            <p class="opis" >Amount: <input type="number" name="Amount" min="1" value="1" style="width: 40px;"></p>
+            <br>
+            <button class="btn">Add to cart</button>
+        </p>
+    </div>
+    <div class="container">
+    <p class="proizvod">
+        <p >
+            <h2 class="naziv">Nike Air Vapormax 2020</h2>
+            <br>
+            <img src="vapormax.jpg" alt="Nike Air Vapormax 2020">
+            <br>
+            <p style="color: orange;" class="opis">Price: 225$</p>
+            <br>
+            <p class="opis">Amount: <input type="Number" name="Amount" min="1" value="1" style="width: 40px;"></p>
+            <br>
+            <button class="btn">Add to cart </button>
+        </p>
+        </p>
+    </div>
+    <div class="sacai">
+        <p class="proizvod">
+            <h2 class="naziv">Nike x Sacai</h2>
+            <br>
+            <img src="Jakna.jpg " alt="NikexSacai">
+            <br>
+            <p style="color: orange;" class="opis">Price: 600$</p>
+            <br>
+            <p class="opis">Amount: <input type="Number" name="Amount" min="1" value="1" style="width: 40px;" ></p>
+            <br>
+            <button class="btn">Add to cart</button>
+        </p>
+    </div>
+    </div>
+    
+
+<!------------------------------------VESTI------------------------------------->
+
+
+    <p class="naslov">News <hr color="orange"></p>
+
+    <div class="vesti">
+    
+    <br>
+        <div class="vesti">
+            <p style="float: left;"><img src="Najk_vest1.jpg" ></p>
+            <p><h4>Watch Nike’s New “You Can’t Stop Our Voice” Film</h4></p>
+            <hr>
+            <p style="margin-top: 5px;">October 23, 2020 – Narrated by Regina King, the film coincides with Nike’s partnership with Lyft  and efforts to help get out the vote this November.</p>
+        </div>
+
+        <div class="vesti">
+            <p style="float: left;"><img src="Najk_vest2.jpg"></p>
+            <div>
+
+            
+            <p class="vst"><h4 class="vst">How to Get the Virgil Abloh Air Jordan V x Off-White Collection</h4></p>
+            <hr>
+            <p style="margin-top: 5px;">October 20, 2020 – Release details on the silhouette and apparel capsule, arriving beginning October 29 on SNKRS and at select retailers.</p>    
+        </div>
+    </div>
+
+        <div class="vesti">
+            <p style="float: left;"><img src="Najk_vest4.jpg"></p>
+            <p><h4>Nike and sacai Take on the Down Jacket</h4></p>
+            <hr>
+            <p style="margin-top: 5px;">October 16, 2020 – The Nike x sacai outerwear collection, which deconstructs and reconstructs the familiar puffer coat, releases globally October 20.</p>    
+        </div>
+        </div>
+
+<!------------------------------------REGISTRACIJA------------------------------------->
+
+        <p class="naslov">Registration <hr color="orange"></p>
+        <br>
+        <div id="reg">
+            <table>
+                <tr>
+                    <td class="unos">Username: </td>
+                    <td><input type="text" style="width: 200px;"></td>
+                    <td class="unos">Email: </td>
+                    <td><input type="email" style="width: 200px;"></td>
+                </tr>
+                
+                <tr>
+                    <td class="unos">Password: </td>
+                    <td ><input type="password" style="width: 200px;"></td>
+                    <td class="unos">Country</td>
+                    <td><select name="Country" id="Country" style="width: 200px;">
+                        <option value="Serbia">Serbia</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Bosnia and Hercegovina">Bosnia and Hercegovina</option>
+                </tr>
+                <tr>
+                    <td class="unos"> Gender:  </td>
+                    <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label> </td>
+                    <td class="unos">Date of Birth </td>
+                    <td><input type="date" style="width: 200px;"></td>
+                </tr>
+
+              
+            </table>
+           
+        </div>
+
+
+<!------------------------------------FOOTER------------------------------------->
+
+
+        <div class="footer">
+            <img src="jdi.png" alt="">
+            <div class="info">
+          <div class="kontakt">
+            <i class="fas fa-user"></i> Pavle Otašević s29/19   
+          </div>
+          <div class="kontakt">
+            <i class="fas fa-phone"></i> 066476930
+          </div>
+          <div class="kontakt">
+            <i class="fas fa-inbox"></i> potasevic2919s@raf.rs
+          </div>
+          <div class="kontakt">
+            <i class="far fa-building"></i> Knez Mihailova 1 
+        </div>
+        </div>
+        
+        
+    </div>
+       
+       
+        
+
+    
+</body>
+</html>
