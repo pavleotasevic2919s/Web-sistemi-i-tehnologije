@@ -1,0 +1,200 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+        nav{
+        background: rgb(77, 77, 77);
+        height: 85px;
+        width: 100%;
+    }
+
+    nav img
+    {
+        height: 100%;
+        width: 10%;
+    }
+    nav ul
+    {
+        float: right;
+        margin-right: 20px;
+        background-color: rgb(77, 77, 77);
+    }
+    nav ul li 
+    {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a 
+    {
+        color: white;
+        font-size: 20px;
+        padding: 7px 13px;
+        
+    }
+    nav a:hover
+    {   
+        background: #ff6600;
+        transition: all 0.5s;
+    }
+    .jdi
+    {
+        float: left;
+        margin-right: 550px;
+        color: orange;
+        font-size: 25px;
+    }
+
+    .naslov
+    {
+        padding: 200px ;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: flex;
+    
+    }
+   .naslov
+   {
+       padding: 10px 20px;
+       color:#c24f03ef;
+       ;    
+   }
+   #main
+   {
+       background-color: #cccccc;
+       
+
+   }
+   main input
+   {
+       width: 50px;
+   }
+   .container
+   {
+       background-color: rgb(70, 70, 70);
+       width: 300px;
+       height: 450px;
+       border-radius: 5%;
+       justify-content: center;
+   }
+   .sacai
+   {
+    background-color: rgb(70, 70, 70);
+    width: 300px;
+    height: 450px;
+    border-radius: 5%;
+    justify-content: center;
+    margin-left: 50px;
+   }
+   #Home
+   {
+       padding : 2% 25%;
+       margin-top: 20px;
+       grid-gap: 50px;
+       display: flex;
+       flex-wrap: wrap;  
+   }
+   #Home img
+   {
+       width: 200px;
+       height: 200px;
+       display: block;
+       margin-left:50px ;
+   }
+   .proizvod
+   {
+    flex-wrap:wrap ;
+    justify-content: center;
+       padding: 5%;
+       border-radius: 5%;
+   }
+   .naziv
+   {
+      text-align: center;
+      color: rgb(189, 189, 189);
+   }
+   .btn
+   {
+       background-color: black;
+       margin-left: 20px;
+       color:rgb(189, 189, 189);
+       width: 100px;
+       height: 30px;
+       
+   }
+   .opis
+   {
+       margin-left: 20px;
+   }
+   .vesti
+   {
+       display: inline-block;
+       margin-left: 8%;
+       padding-bottom: 30px;
+
+   }
+   .vesti img
+   {
+       border: none;
+     display: inline-block;
+       height: 200px;
+       width: 200px;
+       padding-right: 10px;
+       
+   }
+   .vst
+   {
+       margin-left: 100px;
+   }
+  #reg
+  {
+      margin-left: 20%;
+  }
+  table
+  {
+      border-collapse: separate;
+      border-spacing: 25px 10px;
+  }
+  .unos
+  {
+      float: right;
+  }
+  table
+  {
+      padding-bottom: 20px  ;
+  }
+  
+  .footer
+  {
+      background-color: rgb(70, 67, 67);
+  }
+
+
+  
+  .kontakt
+  {
+      
+      color: #c24f03ef;
+      display: inline-block;
+      text-align: center; 
+      padding-right: 100px;
+  }
+  .info
+  {
+      padding-left: 20%;
+      padding-top: 50px;
+      padding-bottom: 10px;
+  }
+
+  .footer img
+  {
+     margin-top: 50px;
+      margin-left: 380px;
+      width: 700px;
+      height: 200px;
+  }
