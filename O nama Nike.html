@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="shortcut icon" href="nike logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="O nama Nike.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+        <div class="gore">
+
+          <nav>
+          
+                  <img src="nike.webp" alt="logo">
+                  <li class="jdi"> <h4>JUST DO IT.</h4></li>
+                  <label for="toggle" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                  <input type="checkbox" id="toggle"/>
+                  <div class="heder">
+                      <ul>
+                      <li><a href="Domaci 3.html">HOME</a></li> 
+                      <li><a href="Vesti.html">NEWS</a></li>
+                      <li><a href="Kontakt Nike.html">CONTACT</a></li>
+                      <li><a href="O nama Nike.html">ABOUT US</a></li>
+                      <li><a href="Korpa.html">CART <i class="fas fa-shopping-cart"></i> </a></li>
+                  </ul>
+              </div>
+                 
+              </nav>  
+          </div>
+</head>
+<body>
+                     <!---------------------------------------------HEADER----------------------------------------------- -->
+
+
+
+                            <!----------------------------------------- MAIN------------------------------ -->
+<div class="onama">
+    <h2 style="color:#ff6600; margin: 10px ;">ABOUT US</h2>
+    <hr color="orange">
+    <div class="tekst">
+        NIKE, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is the world's largest supplier of athletic shoes and appareland a major manufacturer of sports equipment, with revenue in excess of US$37.4 billion in its fiscal year 2020 (ending May 31, 2020). As of 2020, it employed more than 75,400 people worldwide.[citation needed] In 2020 the brand alone was valued in excess of $32 billion, making it the most valuable brand among sports businesses.Previously in 2017, the Nike brand was valued at $29.6 billion.Nike ranked No. 89 in the 2018 Fortune 500 list of the largest United States corporations by total revenue.
+
+        The company was founded on January 25, 1964, as "Blue Ribbon Sports", by Bill Bowerman and Phil Knight, and officially became Nike, Inc. on May 30, 1971. The company takes its name from Nike, the Greek goddess of victory.Nike markets its products under its own brand, as well as Nike Golf, Nike Pro, Nike+, Air Jordan, Nike Blazers, Air Force 1, Nike Dunk, Air Max, Foamposite, Nike Skateboarding, Nike CR7, and subsidiaries including Brand Jordan, and Converse. Nike also owned Bauer Hockey (later renamed Nike Bauer) from 1995 to 2008, and previously owned Cole Haan, Umbro, and Hurley International.In addition to manufacturing sportswear and equipment, the company operates retail stores under the Niketown name. Nike sponsors many high-profile athletes and sports teams around the world, with the highly recognized trademarks of "Just Do It" and the Swoosh logo.
+
+    </div>
+   
+
+
+<div class="row">
+  <div class="column">
+    <img src="Najk_vest1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Najk_vest2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Najk_vest3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Najk_vest4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Najk_vest1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Najk_vest2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Najk_vest3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Najk_vest4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Najk_vest1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Najk_vest2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Najk_vest3.jpg" style="width:100%" height="500px" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Najk_vest4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+                            <!-- ----------------------------------FOOTER----------------------------------- -->
+
+
+                            <div class="footer">
+                                <img src="jdi.png" alt="">
+                                <div class="info">
+                              <div class="kontakt">
+                                <i class="fas fa-user"></i> Pavle Otašević s29/19   
+                              </div>
+                              <div class="kontakt">
+                                <i class="fas fa-phone"></i> 066476930
+                              </div>
+                              <div class="kontakt">
+                                <i class="fas fa-inbox"></i> potasevic2919s@raf.rs
+                              </div>
+                              <div class="kontakt">
+                                <i class="far fa-building"></i> Knez Mihailova 1 
+                            </div>
+                            </div>
+                            
+                            
+                            </div>
+</body>
+</html>

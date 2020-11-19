@@ -1,0 +1,296 @@
+@boja_nav: #464646;
+@boja_pozadine: #cccccc;
+@narandzasta: #ff6600 ;
+@boja_slova: #bdbdbd;
+@boja_footer:  #464343;
+.dugme
+{
+	background-color: black;
+	color: @boja_slova;
+}
+.dimenzije(@param1,@param2)
+{
+	width: @param1;
+	height: @param2;
+}
+.sredina
+{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+// KLASE----------------------------------------------------
+* {
+	padding: 0;
+	margin: 0 auto;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hamburger {
+	margin: 0 40px 0 0;
+	padding-top: 10px;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle {
+	display: none;
+}
+nav {
+	background:@boja_nav;
+	height: 85px;
+	width: 100%;
+	margin-top: -25px;
+	img {
+		height: 100%;
+		width: 10%;
+		float: left;
+	}
+	ul {
+		float: right;
+		margin-right: 20px;
+		margin-top: -55px;
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			a {
+				color: white;
+				font-size: 20px;
+				padding: 7px 13px;
+			}
+		}
+	}
+	a {
+		&:hover {
+			background: @narandzasta;
+			transition: all 0.5s;
+		}
+	}
+}
+.jdi {
+	float: left;
+	margin-right: 300px;
+	margin-top: -60px;
+	margin-left: 170px;
+	width: max-content;
+	clear: left;
+	color: orange;
+	font-size: 25px;
+}
+.heder {
+	margin: 0 0 25px 0;
+}
+.naslov {
+	padding: 200px;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: flex;
+	padding: 10px 20px;
+	color: orange;
+}
+#main {
+	background-color: @boja_pozadine;
+}
+main {
+	input {
+		width: 50px;
+	}
+}
+.container {
+	background-color:@boja_nav;
+	border-radius: 5%;
+	justify-content: center;
+	.dimenzije(300px, 450px)
+}
+#Home {
+	padding: 2% 25%;
+	margin-top: 20px;
+	grid-gap: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	img {
+		width: 200px;
+		height: 200px;
+		display: block;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+.proizvod {
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5%;
+	border-radius: 5%;
+}
+.naziv {
+	text-align: center;
+	color: @boja_slova;
+}
+.btn:extend(.dugme) {
+	margin-left: 20px;
+	width: 100px;
+	height: 30px;
+}
+.opis {
+	margin-left: 20px;
+}
+.vesti {
+	display: inline-block;
+	margin-left: 8%;
+	padding-bottom: 30px;
+	img {
+		border: none;
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+		padding-right: 10px;
+	}
+}
+.vst {
+	margin-left: 100px;
+}
+#reg:extend (.sredina) {
+	width: 50%;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 25px 10px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+.unos {
+	float: right;
+}
+.footer {
+	background-color:@boja_footer;
+	img {
+		margin-top: 50px;
+		margin-left: 25%;
+		margin-right: 25%;
+		width: 50%;
+		height: 200px;
+	}
+}
+.kontakt {
+	color: orange;
+	display: inline-block;
+	text-align: center;
+	padding-right: 100px;
+}
+.info {
+	padding-left: 20%;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+/*------------------------------------------------RESPONSIVE------------------------------------ */
+@media only screen and (max-width:1378px) {
+	.col {
+		margin-right: 150px;
+	}
+}
+@media only screen and (max-width: 1135px) {
+	body {
+		width: 100%;
+	}
+	nav {
+		width: 100%;
+	}
+	.Tslika {
+		position: relative;
+		left: 400px;
+	}
+	.info {
+		padding: 5px 200px;
+		text-align: center;
+	}
+	.kontakt {
+		margin-top: 5px;
+	}
+}
+@media only screen and (max-width: 930px) {
+	.info {
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 891px) {
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		color: orange;
+		margin-top: -80px;
+		position: relative;
+		bottom: 5px;
+	}
+	nav {
+		ul {
+			li {
+				a {
+					font-size: 18px;
+				}
+				padding-top: 15px;
+			}
+		}
+		a {
+			&:hover {
+				background: none;
+				color: red;
+			}
+		}
+		margin: 0px;
+		width: 100%;
+	}
+	.heder {
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	ul {
+		li {
+			display: block;
+			border-bottom: 1px solid #EAEAEB;
+			margin: 0;
+		}
+		background-color: orange;
+		padding: 4px;
+		position: absolute;
+	}
+	#toggle &:checked + .heder{
+		 
+					display: block;
+					width: 20%;
+					float: right;
+					margin-top: 35px;
+				}
+			}
+		
+	
+	.jdi {
+		width: max-content;
+	}
+
+@media only screen and (max-width: 848px) {
+	.kontakt {
+		margin: 2px 150px;
+	}
+	#reg {
+		margin-left: 0;
+		padding-right: 50%;
+	}
+}
+@media only screen and (max-width: 714px) {
+	body {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 667px) {
+	.footer {
+		padding: 0px;
+	}
+	.kontakt {
+		margin-top: 5px;
+		margin-right: 50px;
+	}
+}
