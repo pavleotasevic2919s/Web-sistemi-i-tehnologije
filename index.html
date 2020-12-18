@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+
+
+	<style>
+        table {
+
+		  color: black;
+          border-collapse: collapse;
+		  font-family: 'Courier New', Courier, monospace, sans-serif;
+          width: 80%;
+        }
+        
+        td, th {
+          
+          text-align: left;
+		  border: 1px solid black;
+          padding: 8px;
+        }
+        
+		a{
+			color: black;
+		}
+
+		tr:nth-child(odd) {
+          background-color:  blue;
+        }
+
+        tr:nth-child(even) {
+          background-color: aqua;
+        }
+
+		
+        </style>
+</head>
+<body>
+
+	<label for="search">Pretraga:</label><input type="text" id="search" placeholder="Unesite kljucnu rec"  style="margin: 80px 10px;">
+		<table border="1">
+
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Predmet</th>
+				<th>V/P</th>
+				<th>Nastavnik</th>
+				<th>Grupa</th>
+				<th>Dan</th>
+				<th>Vreme</th>
+				<th>Ucionica</th>
+			  </tr>
+		</thead>
+			
+		<tbody id="search">
+			{% for f in raspored %}
+			<tr>
+				<td>{{f[0]}}</td>
+				<td>{{f[1]}}</td>
+				<td>{{f[2]}}</td>
+				<td>{{f[3]}}</td>
+				<td>{{f[4]}}</td>
+				<td>{{f[5]}}</td>
+				<td>{{f[6]}}</td>  
+				<td>{{f[7]}}</td>
+				
+			</tr>
+		{% endfor %}
+		</tbody>
+	
+		  </table>
+
+
+		  <table table style=" margin-right: 30px; width: 10%;">
+			  <thead>
+				  <tr>
+					  <td>Profesor</td>
+				  </tr>
+			  </thead>
+			  <tbody>
+				{% for f in prvi %}
+				  <tr>
+					  <td><a href="#" class="nastavnik ime">{{s[0]}}</a></td>
+				  </tr>
+				  {% endfor %}
+			  </tbody>
+		  </table>
+
+		  <table style=" margin-right: 30px; width: 10%;">
+			<thead>
+				<tr>
+					<td>Ucionica</td>
+				</tr>
+			</thead>
+			<tbody>
+			  {% for f in drugi %}
+				<tr>
+					<td><a href="#" class="ucionica broj">{{s[0]}}</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		  <script>
+			  $(document).ready(function(){
+				  $("#search").on("keyup", function(){
+					  var value = $(this).val().toLowerCase();
+					  $("#search tr").filter(function(){
+						  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+					  });
+				  });
+			  });
+		  </script>
+
+</body>
+</html>
